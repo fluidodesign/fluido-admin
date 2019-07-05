@@ -1,0 +1,19 @@
+{
+  "short_name": "FluidoCMSAmin",
+  "name": "Fluido CMS Admin",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": " #25a3b1",
+  "background_color": "#ffffff",
+  "permissions": [
+    "identity",
+    "https://ssl.gstatic.com/",
+    "https://www.googleapis.com/",
+    "https://accounts.google.com/"
+  ],
+  "gcm_sender_id": "272258538998",
+  "oauth2": {
+    "client_id": "272258538998-3lqs708m2ucqqo0egcsgmoac0kmk19n1.apps.googleusercontent.com",
+    "scopes": ["https://www.googleapis.com/auth/drive"]
+  }
+}

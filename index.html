@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes"
+    />
+    <meta name="theme-color" content=" #25a3b1" />
+    <title>Fluido CMD Admin</title>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://www.gstatic.com/firebasejs/ui/4.0.0/firebase-ui-auth.css"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/zgv7rrk.css" />
+    <link rel="stylesheet" href="/typography.css" />
+    <link rel="stylesheet" href="/global.css" />
+    <link rel="stylesheet" href="/bundle.css" />
+
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+
+    <script>
+      window.setInitLoading = function(val = false) {
+        const node = document.getElementById('init-loading')
+        if (!node) return
+        if (!val && !node.classList.contains('loaded'))
+          node.classList.add('loaded')
+        if (val && node.classList.contains('loaded'))
+          node.classList.remove('loaded')
+      }
+    </script>
+    <script
+      async
+      src="https://www.gstatic.com/firebasejs/ui/4.0.0/firebase-ui-auth__pt_br.js"
+    ></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <div id="init-loading">
+      <span class="type-subtitle1">Carregando...</span>
+    </div>
+    <script src="/bundle.js"></script>
+  </body>
+</html>
